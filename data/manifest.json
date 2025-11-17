@@ -1,0 +1,91 @@
+[
+  {
+    "id": "time",
+    "path": "audio/time.wav",
+    "transcript": "what time is it now",
+    "response_chunks": [
+      "The local time ",
+      "is nine thirty. ",
+      "I can also set a reminder."
+    ],
+    "early_trigger": "it now",
+    "sample_rate": 16000
+  },
+  {
+    "id": "weather",
+    "path": "audio/weather.wav",
+    "transcript": "what is the weather today",
+    "response_chunks": [
+      "It is mild and dry today. ",
+      "A light jacket should be enough."
+    ],
+    "early_trigger": "weather today",
+    "sample_rate": 16000
+  },
+  {
+    "id": "reminder",
+    "path": "audio/reminder.wav",
+    "transcript": "can you set a reminder",
+    "response_chunks": [
+      "Your reminder is set for six. ",
+      "I will keep it on this device."
+    ],
+    "early_trigger": "a reminder",
+    "sample_rate": 16000
+  },
+  {
+    "id": "calendar",
+    "path": "audio/calendar.wav",
+    "transcript": "what is on my calendar",
+    "response_chunks": [
+      "You have one design review at ten. ",
+      "The rest of the morning is free."
+    ],
+    "early_trigger": "my calendar",
+    "sample_rate": 16000
+  },
+  {
+    "id": "traffic",
+    "path": "audio/traffic.wav",
+    "transcript": "how is the traffic downtown",
+    "response_chunks": [
+      "Traffic downtown is moving slowly. ",
+      "Allow ten extra minutes."
+    ],
+    "early_trigger": "traffic downtown",
+    "sample_rate": 16000
+  },
+  {
+    "id": "status",
+    "path": "audio/status.wav",
+    "transcript": "what is the latest project status",
+    "response_chunks": [
+      "The project is on track this week. ",
+      "Two checks remain before release."
+    ],
+    "early_trigger": "project status",
+    "sample_rate": 16000
+  },
+  {
+    "id": "music",
+    "path": "audio/music.wav",
+    "transcript": "can you play some quiet music",
+    "response_chunks": [
+      "I will start a quiet instrumental mix. ",
+      "You can ask me to stop."
+    ],
+    "early_trigger": "quiet music",
+    "sample_rate": 16000
+  },
+  {
+    "id": "meeting",
+    "path": "audio/meeting.wav",
+    "transcript": "what is the next team meeting",
+    "response_chunks": [
+      "The next team meeting starts at two. ",
+      "It is in the main room."
+    ],
+    "early_trigger": "team meeting",
+    "sample_rate": 16000
+  }
+]
