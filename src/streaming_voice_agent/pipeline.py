@@ -51,6 +51,7 @@ class StreamingVoiceAgent:
         self.chunker = SentenceChunker()
         self.tts = ScriptedTTS()
         self.trace = TurnTrace()
+        self._last_frame_end_ms = 0
 
     def _consume_asr(self, update: ASRUpdate) -> None:
         self.trace.asr_updates.append(update)
@@ -65,6 +66,7 @@ class StreamingVoiceAgent:
                 self.trace.audio.append(self.tts.synthesize(sentence))
 
     def process(self, frame: AudioFrame) -> None:
+        self._last_frame_end_ms = frame.end_ms
         update = self.vad.process(frame)
         if update.speech_frames:
             for asr_update in self.asr.push(update.speech_frames):
@@ -78,8 +80,7 @@ class StreamingVoiceAgent:
         update = self.vad.flush()
         if update.ended:
             self.trace.speech_end_ms = update.speech_end_ms
-            last_audio_end = self.trace.asr_updates[-1].ready_at_ms if self.trace.asr_updates else 0
-            self.trace.endpoint_detected_ms = max(self.trace.speech_end_ms or 0, last_audio_end)
+            self.trace.endpoint_detected_ms = self._last_frame_end_ms
             self._consume_asr(self.asr.finalize(self.trace.endpoint_detected_ms))
         if self.llm.started_at_ms is not None:
             ready_at = self.trace.response_pieces[-1].ready_at_ms
