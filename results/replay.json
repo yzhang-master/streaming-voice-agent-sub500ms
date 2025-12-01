@@ -1,0 +1,258 @@
+{
+  "generated_at": "2026-11-14T15:09:57.135999+00:00",
+  "measurement": "deterministic audio-timeline replay; not a production latency benchmark",
+  "latency_origin": "last speech frame end",
+  "latency_target": "first synthesized sentence audio ready",
+  "percentile_method": "NumPy linear interpolation",
+  "vad": {
+    "frame_ms": 20,
+    "threshold_dbfs": -45.0,
+    "min_speech_frames": 2,
+    "min_silence_frames": 8,
+    "preroll_frames": 2
+  },
+  "modes": {
+    "early_start": {
+      "summary": {
+        "turns": 8,
+        "voice_to_voice_p50_ms": 52.0,
+        "voice_to_voice_p95_ms": 59.199999999999996,
+        "voice_to_voice_min_ms": 48,
+        "voice_to_voice_max_ms": 62,
+        "early_started_turns": 8,
+        "llm_lead_p50_ms": 240.0,
+        "llm_lead_p95_ms": 240.0,
+        "mean_replay_wall_ms_per_turn": 5.24523175045033,
+        "total_output_pcm_samples": 282240
+      },
+      "turns": [
+        {
+          "id": "time",
+          "voice_to_voice_ms": 62,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 625,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 742,
+          "sentence_count": 2,
+          "pcm_sample_count": 34560,
+          "replay_wall_ms": 7.200516000011703
+        },
+        {
+          "id": "weather",
+          "voice_to_voice_ms": 48,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 625,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 728,
+          "sentence_count": 2,
+          "pcm_sample_count": 34560,
+          "replay_wall_ms": 7.041371001832886
+        },
+        {
+          "id": "reminder",
+          "voice_to_voice_ms": 50,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 625,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 730,
+          "sentence_count": 2,
+          "pcm_sample_count": 37440,
+          "replay_wall_ms": 4.201227999146795
+        },
+        {
+          "id": "calendar",
+          "voice_to_voice_ms": 52,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 625,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 732,
+          "sentence_count": 2,
+          "pcm_sample_count": 40320,
+          "replay_wall_ms": 5.337455000699265
+        },
+        {
+          "id": "traffic",
+          "voice_to_voice_ms": 52,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 625,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 732,
+          "sentence_count": 2,
+          "pcm_sample_count": 25920,
+          "replay_wall_ms": 4.429085001902422
+        },
+        {
+          "id": "status",
+          "voice_to_voice_ms": 52,
+          "speech_end_ms": 780,
+          "endpoint_detected_ms": 940,
+          "final_asr_ms": 965,
+          "llm_started_ms": 725,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 832,
+          "sentence_count": 2,
+          "pcm_sample_count": 34560,
+          "replay_wall_ms": 4.601630000252044
+        },
+        {
+          "id": "music",
+          "voice_to_voice_ms": 54,
+          "speech_end_ms": 780,
+          "endpoint_detected_ms": 940,
+          "final_asr_ms": 965,
+          "llm_started_ms": 725,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 834,
+          "sentence_count": 2,
+          "pcm_sample_count": 37440,
+          "replay_wall_ms": 4.931911000312539
+        },
+        {
+          "id": "meeting",
+          "voice_to_voice_ms": 53,
+          "speech_end_ms": 780,
+          "endpoint_detected_ms": 940,
+          "final_asr_ms": 965,
+          "llm_started_ms": 725,
+          "llm_lead_ms": 240,
+          "first_audio_ms": 833,
+          "sentence_count": 2,
+          "pcm_sample_count": 37440,
+          "replay_wall_ms": 4.218657999444986
+        }
+      ]
+    },
+    "final_only": {
+      "summary": {
+        "turns": 8,
+        "voice_to_voice_p50_ms": 292.0,
+        "voice_to_voice_p95_ms": 299.2,
+        "voice_to_voice_min_ms": 288,
+        "voice_to_voice_max_ms": 302,
+        "early_started_turns": 0,
+        "llm_lead_p50_ms": 0.0,
+        "llm_lead_p95_ms": 0.0,
+        "mean_replay_wall_ms_per_turn": 4.9824954994619475,
+        "total_output_pcm_samples": 282240
+      },
+      "turns": [
+        {
+          "id": "time",
+          "voice_to_voice_ms": 302,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 865,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 982,
+          "sentence_count": 2,
+          "pcm_sample_count": 34560,
+          "replay_wall_ms": 5.3901669998595025
+        },
+        {
+          "id": "weather",
+          "voice_to_voice_ms": 288,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 865,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 968,
+          "sentence_count": 2,
+          "pcm_sample_count": 34560,
+          "replay_wall_ms": 4.057463000208372
+        },
+        {
+          "id": "reminder",
+          "voice_to_voice_ms": 290,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 865,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 970,
+          "sentence_count": 2,
+          "pcm_sample_count": 37440,
+          "replay_wall_ms": 4.885629998170771
+        },
+        {
+          "id": "calendar",
+          "voice_to_voice_ms": 292,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 865,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 972,
+          "sentence_count": 2,
+          "pcm_sample_count": 40320,
+          "replay_wall_ms": 5.140667999512516
+        },
+        {
+          "id": "traffic",
+          "voice_to_voice_ms": 292,
+          "speech_end_ms": 680,
+          "endpoint_detected_ms": 840,
+          "final_asr_ms": 865,
+          "llm_started_ms": 865,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 972,
+          "sentence_count": 2,
+          "pcm_sample_count": 25920,
+          "replay_wall_ms": 3.973279999627266
+        },
+        {
+          "id": "status",
+          "voice_to_voice_ms": 292,
+          "speech_end_ms": 780,
+          "endpoint_detected_ms": 940,
+          "final_asr_ms": 965,
+          "llm_started_ms": 965,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 1072,
+          "sentence_count": 2,
+          "pcm_sample_count": 34560,
+          "replay_wall_ms": 4.491796000365866
+        },
+        {
+          "id": "music",
+          "voice_to_voice_ms": 294,
+          "speech_end_ms": 780,
+          "endpoint_detected_ms": 940,
+          "final_asr_ms": 965,
+          "llm_started_ms": 965,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 1074,
+          "sentence_count": 2,
+          "pcm_sample_count": 37440,
+          "replay_wall_ms": 6.422639999072999
+        },
+        {
+          "id": "meeting",
+          "voice_to_voice_ms": 293,
+          "speech_end_ms": 780,
+          "endpoint_detected_ms": 940,
+          "final_asr_ms": 965,
+          "llm_started_ms": 965,
+          "llm_lead_ms": 0,
+          "first_audio_ms": 1073,
+          "sentence_count": 2,
+          "pcm_sample_count": 37440,
+          "replay_wall_ms": 5.498319998878287
+        }
+      ]
+    }
+  },
+  "p50_reduction_ms": 240.0,
+  "p95_reduction_ms": 240.0
+}
