@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-11-14T15:12:03.230055+00:00",
+  "restored_after_each_mutation": true,
+  "mutations": [
+    {
+      "mutation": "vad-rms-becomes-mean-absolute",
+      "path": "src/streaming_voice_agent/vad.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "1 failed, 4 passed in 0.23s"
+    },
+    {
+      "mutation": "vad-requires-extra-silence-frame",
+      "path": "src/streaming_voice_agent/vad.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "2 failed, 5 passed in 0.26s"
+    },
+    {
+      "mutation": "sentence-boundaries-disabled",
+      "path": "src/streaming_voice_agent/chunking.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "4 failed, 1 passed in 0.24s"
+    },
+    {
+      "mutation": "early-trigger-never-matches",
+      "path": "src/streaming_voice_agent/llm.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "2 failed, 3 passed in 0.34s"
+    }
+  ]
+}
